@@ -1,0 +1,656 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.background {
+    position: relative;
+}
+
+.container-background-img {
+    position: absolute;
+    right: -50px;
+    top: -140px;
+}
+
+.container {
+    position: relative;
+    /*background: #0dcaf0;*/
+    padding: 0;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 0;
+}
+
+.header .address {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.header .phone-number {
+    position: relative;
+    width: 180px;
+}
+
+.header .phone-number .number {
+    position: absolute;
+    left: 35px;
+    width: 150px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.header .phone-number .icon {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 28px;
+    height: 28px;
+}
+
+.educators-topic {
+    position: relative;
+    width: 556px;
+    height: 60px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    font-family: 'Comfortaa', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 58px;
+
+    color: #FBCD44;
+}
+
+.educators {
+    position: relative;
+    /*width: 1140px;*/
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 53px;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.educators div {
+    position: relative;
+    width: 550px;
+    height: 500px;
+}
+
+.educators div .name {
+    position: absolute;
+    width: 550px;
+    height: 40px;
+    left: 20px;
+    top: 340px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: left;
+
+    color: #6DC5C6;
+}
+
+.educators div .description {
+    position: absolute;
+    width: 550px;
+    height: 50px;
+    left: 20px;
+    top: 390px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+
+    color: #000000;
+}
+
+.educators div .read-more {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    right: 20px;
+    top: 470px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+
+    color: #6DC5C6;
+}
+
+.educators .melnyk .name, .educators .shpuryk .name, .educators .yalovenko .name {
+    color: #F596CA;
+}
+
+.educators .melnyk .read-more, .educators .shpuryk .read-more, .educators .yalovenko .read-more {
+    color: #F596CA;
+}
+
+#call-form {
+    position: relative;
+    height: 273px;
+    width: 1054px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+#call-form img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+}
+
+#call-form .topic {
+    position: absolute;
+    width: 552px;
+    height: 81px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 40px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#call-form .name-form {
+    position: absolute;
+    width: 270px;
+    height: 52px;
+    left: 60px;
+    top: 150px;
+    padding-left: 30px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 0;
+}
+
+#call-form .name-form::placeholder {
+    color: #C4C4C4;
+}
+
+#call-form .phone-number-form {
+    position: absolute;
+    width: 330px;
+    height: 52px;
+    left: 360px;
+    top: 150px;
+    padding-left: 30px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 0;
+}
+
+#call-form .phone-number-form::placeholder {
+    color: #C4C4C4;
+}
+
+#call-form .main-btn {
+    position: absolute;
+    width: 270px;
+    height: 52px;
+    right: 60px;
+    top: 150px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    background: #F596CA;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.footer {
+    position: relative;
+    width: 1701px;
+    height: 500px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
+}
+
+.footer .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer .text {
+    position: absolute;
+    width: 600px;
+    top: 150px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.footer .description {
+    position: absolute;
+    width: 600px;
+    top: 200px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+@media (max-width: 991px) {
+    .header .logo {
+        transform: scale(0.8);
+    }
+
+    .header .address {
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .header .phone-number {
+        width: 180px;
+    }
+
+    .header .phone-number .number {
+        left: 18px;
+        width: 150px;
+
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .header .phone-number .icon {
+        left: 0;
+        top: 4px;
+        transform: scale(0.7);
+    }
+
+    #call-form .name-form {
+        width: 200px;
+        height: 52px;
+        left: 160px;
+        top: 150px;
+        padding-left: 30px;
+
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    #call-form .phone-number-form {
+        width: 270px;
+        height: 52px;
+        left: 390px;
+        top: 150px;
+        padding-left: 30px;
+
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    #call-form .main-btn {
+        width: 200px;
+        height: 52px;
+        right: 160px;
+        top: 150px;
+
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-background-img {
+        position: absolute;
+        right: -50px;
+        top: -100px;
+    }
+
+    .header {
+        height: 140px;
+        justify-content: space-between;
+        padding: 30px 0 0;
+    }
+
+    .header .logo {
+        transform: scale(0.9);
+    }
+
+    .header .address {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 250px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    .header .phone-number {
+        width: 180px;
+    }
+
+    .header .phone-number .number {
+        left: 18px;
+        top: 6px;
+        width: 150px;
+
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .header .phone-number .icon {
+        left: 0px;
+        top: 12px;
+        transform: scale(0.7);
+    }
+
+    #call-form {
+        height: 284px;
+        width: 1054px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+
+    #call-form img {
+        left: 25%;
+        transform: scale(1.3);
+        z-index: -1;
+    }
+
+    #call-form .topic {
+        width: 345px;
+        height: 46px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 0;
+
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    #call-form .name-form {
+        width: 320px;
+        height: 52px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 60px;
+        padding-left: 30px;
+
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    #call-form .phone-number-form {
+        width: 320px;
+        height: 52px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 130px;
+        padding-left: 30px;
+
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    #call-form .main-btn {
+        width: 320px;
+        height: 52px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 200px;
+
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .footer .text {
+        width: 430px;
+        height: 100px;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .footer .description {
+        width: 450px;
+        height: 100px;
+        top: 250px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .educators-topic {
+        width: 556px;
+        height: 30px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .educators div {
+        width: 374px;
+        height: 330px;
+    }
+
+    .educators div img {
+        position: absolute;
+        left: -80px;
+        top: -50px;
+        transform: scale(0.68);
+    }
+
+    .educators div .name {
+        width: 374px;
+        height: 40px;
+        top: 240px;
+
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .educators div .description {
+        width: 374px;
+        height: 40px;
+        top: 265px;
+
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .educators div .read-more {
+        width: 79px;
+        height: 20px;
+        right: 20px;
+        top: 315px;
+
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+@media (max-width: 475px) {
+    .container-background-img {
+        position: absolute;
+        right: -50px;
+        top: -130px;
+    }
+
+    .header {
+        display: flex;
+        height: 140px;
+        justify-content: space-between;
+        padding: 30px 0 0;
+    }
+
+    .header .logo {
+        transform: scale(0.9);
+    }
+
+    .header .address {
+        top: 80px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 250px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    .header .phone-number {
+        width: 180px;
+    }
+
+    .header .phone-number .number {
+        left: 18px;
+        top: 6px;
+        width: 150px;
+
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .header .phone-number .icon {
+        left: 0;
+        top: 12px;
+        transform: scale(0.7);
+    }
+
+    .footer .text {
+        width: 320px;
+        height: 100px;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .footer .description {
+        width: 320px;
+        height: 100px;
+        top: 290px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
